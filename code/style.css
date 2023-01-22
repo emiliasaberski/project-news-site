@@ -15,11 +15,6 @@ html {
 
  .navbar a {
   display: none;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 20px;
-  color: black;
-  text-decoration: none;
-  letter-spacing: 0.1em;
 }
 
 .navbar a:hover {
@@ -124,6 +119,7 @@ h3 {
 .lonely-grid-item {
   display: block;
   border-top: 1px solid black;
+
 }
 
 .other-news {
@@ -180,16 +176,18 @@ h3 {
 }
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  column-gap: 10%;
-  justify-items: stretch;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.8em;
   color: white;
-  padding: 2%;
+  padding: 5px;
   background-color: black;
+}
+
+.footer img {
+  width: 20%;
 }
 
 @media (min-width: 1025px) {
@@ -200,6 +198,11 @@ h3 {
   }
   .navbar a {
     display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.1em;
   }
     .navbar ul {
     display: flex;
@@ -266,24 +269,18 @@ h3 {
   .small-news-item img {
     grid-column: span 1;
   }
-  .footer {
-    display: grid;
-    grid-template-columns: repeat(4, 25%);
-    justify-items: stretch;
-    align-items: center;
-    padding: 1%;
-    font-size: 1em;
-  }
-  .footer span {
-    grid-column: span 2;
-  }
+
   .footer img {
-    width: 40%;
-    margin-left: 5%;
+    width: 10%;
   }
   }
 
 @media (min-width: 668px) and (max-width:1024px) {
+
+  .navbar img {
+    width: 15%;
+    padding: 1%;
+  }
   .big-news {
     display: flex;
     align-items: flex-start;
@@ -302,15 +299,7 @@ h3 {
     grid-template-columns: auto;
     grid-column: span 2;
   }
-  .footer {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  justify-items: stretch;
-  align-items: center;
-  padding: 1%;
-  }
   .footer img {
-    width: 40%;
-    margin-left: 5%;
+    width: 10%;
   }
   }
