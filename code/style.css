@@ -116,7 +116,7 @@ h3 {
 }
 
 .lonely-grid-item {
-  display: block;
+  display: absolute;
   border-top: 1px solid black;
   width: 100%;
 
